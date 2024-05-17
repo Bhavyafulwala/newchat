@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <LinearLayout
+        android:id="@+id/backgroung"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@drawable/logback"
+        android:orientation="vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/backgroung"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_4sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="70sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="@color/black"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:hint="Email"
+            android:id="@+id/emailtextlogin"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_17sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textColor="@color/black"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:hint="password"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/passtextlogin"
+            android:textSize="@dimen/_17sdp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:backgroundTint="@color/black"
+            android:id="@+id/loginbutton"
+            android:textSize="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR SIGN_UP"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/black"
+            android:id="@+id/signinlog"
+            android:textColorHighlight="@color/black"
+            android:layout_gravity="center"/>
+            
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
